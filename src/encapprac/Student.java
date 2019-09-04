@@ -8,9 +8,7 @@ public class Student {
     private String lastName;
     private int age;
 
-    public void Student(){
-
-    }
+    public void Student(){ }
 
     public void Student(String firstName, String lastName, int age){
         this.firstName =firstName;

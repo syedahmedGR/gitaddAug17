@@ -13,6 +13,7 @@ public class Toyota extends MotorCar implements Car {
     public void stop(){
         System.out.println("Car must have break system");
     }
+
     public void energy(){
         System.out.println("Car run by oil");
     }

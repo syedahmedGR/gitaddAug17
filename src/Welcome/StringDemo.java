@@ -1,5 +1,7 @@
 package Welcome;
 
+import inheritance.oop.University;
+
 public class StringDemo {
 
     public static void main(String[] args) {
@@ -31,6 +33,9 @@ public class StringDemo {
         System.out.println(strCheck.indexOf("r", strCheck.indexOf("r")+1)); // 2nd occurance of r
 
         String  username = "welcome Tom";
+        int z=178;
+        username = z + username;
+        System.out.println(username);
 
         if(str1.equalsIgnoreCase(str2)) // if (str1.equals(str2))
             System.out.println("Similar string");
@@ -67,5 +72,14 @@ public class StringDemo {
         String h = "12.33";
         System.out.println(Double.parseDouble(h)+20);
 
+        String s1 = "Syed", s2 = "Muzakkir";
+        // comparing length
+        if (s1.length() > s2.length())
+            System.out.println("bigger : " + s1);
+        else System.out.println("bigger :" +  s2);
+        // comparing lexicographically
+        if (s1.compareTo(s2) > 0)
+            System.out.println("bigger : " + s1);
+        else System.out.println("bigger :" + s2);
     }
 }

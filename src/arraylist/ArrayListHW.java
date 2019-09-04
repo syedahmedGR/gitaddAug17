@@ -3,6 +3,7 @@ package arraylist;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 public class ArrayListHW {
     /* Create a prog that user for their first name, last name and age
      store info print out all user name and age
@@ -10,6 +11,7 @@ public class ArrayListHW {
 */
     // - Incorporate scanner : ask the number of input/users
     // - ArrayList
+ // int a; int a1, int a2, int a3; int[] num = new int[100];
 
     /*  Procedure to execute the program
       for loop
@@ -20,40 +22,50 @@ public class ArrayListHW {
     then print user first name, last name and age
      */
 
-    public static void1{
+    public static void main (String args[]){
 
         // takes input for getting Maximum number of user
         Scanner stdin = new Scanner(System.in);
-        System.out.println("Enter the number of user...");
-        int maxUserNum = stdin.nextInt();
 
-        // create a user Array List...
-        ArrayList<User> userArrayList = new ArrayList<>();
+        try{
+            System.out.println("Enter the number of user...");
+            int maxUserNum = stdin.nextInt();
 
-        // take input firstname, lastname and age
-        // store in the class object
-        for (int i=0; i<maxUserNum; i++){
-            // input for users name & age
+            // create a user Array List...
+            ArrayList<User> userArrayList = new ArrayList<>();
+            //ArrayList<type> variableName = new ArrayList<>();
+            // User user = new User();
 
-            System.out.println("Enter First Name : " + " of User [" + i+1 + "]" );
-            String fname = stdin.next(); // string input
+            // take input firstname, lastname and age
+            // store in the class object
+            // store in the Array List
+            for (int i=0; i<maxUserNum; i++){
+                // input for users name & age
+                System.out.println("This is the info of User :" + (i+1) );
 
-            System.out.println("Enter Last Name : " + " of User [" + i+1 + "]" );
-            String lname = stdin.next(); // string input
+                System.out.println("Enter First Name : "  );
+                String firstName = stdin.next(); // string input
 
-            System.out.println("Enter Age : " + " of User [" + i+1 + "]" );
-            int age  = stdin.nextInt(); // integer input
+                System.out.println("Enter Last Name : " );
+                String lastName = stdin.next(); // string input
 
-            User user = new User(fname, lname, age); // initialize through constructor
+                System.out.println("Enter Age : " );
+                int age  = stdin.nextInt(); // integer input
 
-            userArrayList.add(i, user) ; // assign the class object to the userArrayList
+                User user = new User(firstName, lastName, age); // initialize through constructor
+                //userArrayList.add(user);
+                userArrayList.add(i, user) ; // assign the class object to the userArrayList
 
-        }
-        // display user info to the output
-        for (int i=0; i< maxUserNum; i++){
-            System.out.println(" User[" + i+1 + ']' + " First Name " +   userArrayList.get(i).getFirstName());
-            System.out.println( " User[" + i+1 + ']' + " Last Name " +  userArrayList.get(i).getLastName());
-            System.out.println( " User[" + i+1 + ']' + " Age " + userArrayList.get(i).getAge());
+            }
+            // display user info to the output
+            for (int i=0; i< maxUserNum; i++){
+                System.out.println(" User[" + (i+1) + ']' + " First Name " +   userArrayList.get(i).getFirstName());
+                System.out.println( " User[" + (i+1) + ']' + " Last Name " +  userArrayList.get(i).getLastName());
+                System.out.println( " User[" + (i+1) + ']' + " Age " + userArrayList.get(i).getAge());
+            }
+
+        }catch (Exception ex){
+            ex.printStackTrace();
         }
 
     }

@@ -31,6 +31,7 @@ public class Car {
     public Car(String brand, String model, int year) {
         this.brand = "Toyota";
         this.model = "Camry";
+        this.year = year;
     }
 
     // constructor 3

@@ -1,13 +1,22 @@
-public class staticdemofahim {
+package staticdemofahim;
 
-    String color;
-    String type;
+public class Ball {
 
-    public staticdemofahim(){}
+    private String color;
+    private String type;
+    static int numOfBall=0;
+    public static String manufacturer ="Ball inc.";
 
-    public staticdemofahim(String color, String type) {
+    public Ball(){
+        this.color= "blue";
+        this.type ="regular";
+        numOfBall++;
+    }
+
+    public Ball(String color, String type) {
         this.color = color;
         this.type = type;
+        numOfBall++;
     }
 
     public String getColor() {
@@ -24,5 +33,10 @@ public class staticdemofahim {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public static int getNumBalls(){
+        return numOfBall;
+
     }
 }

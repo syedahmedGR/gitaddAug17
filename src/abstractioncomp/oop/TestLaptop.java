@@ -10,9 +10,12 @@ public class TestLaptop {
         macbookPro.view();
         macbookPro.heavyDutyLaptop();
 
-
         Laptop myLaptop = new MacBook();
+        myLaptop.convertable();
 
+        HP spectre = new HP();
+        spectre.heavyDutyLaptop();
+        spectre.highendGraphics();
 
 
     }
