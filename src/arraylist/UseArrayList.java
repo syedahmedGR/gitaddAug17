@@ -9,6 +9,7 @@ public class UseArrayList {
     public static void main(String[] args) {
 
         List<String> list = new ArrayList<String>();
+
         list.add("NY");
         list.add("NJ");
         list.add("PA");

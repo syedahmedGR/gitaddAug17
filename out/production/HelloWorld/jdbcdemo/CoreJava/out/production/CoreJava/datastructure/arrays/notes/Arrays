@@ -1,0 +1,57 @@
+Arrays
+
+- An array is a data structure that allows you to store multiple values of the
+same type into a single variable
+
+- The default values of numeric array elements are set to zero.
+
+- Arrays are zero indexed; an array with n elements is indexed from 0 to n-1,
+for example; 10 elements index range is from 0 to 9.
+
+- If we try to access index that is out of range, Java will give us
+an ArrayIndexOutOfBoundsException, which indicates that the index is out of range,
+in other words its out of bounds.
+
+- To access array elements we use square braces [ and ], also known as
+array access operator.
+
+
+
+
+Example of creating a new array:
+
+    int [] array = new int[5];
+
+- This array contains the elements from array[0] to array[4]
+- It has 5 elements and the index range is 0 to 4.
+- The new operator or keyword is used to create the array and initialize the
+array elements to their default values.
+- In this example, all the array elements are initialized to zero since this
+is an int array.
+- For boolean, array elements would be initialized to false.
+- For String or other objects, it would be null.
+
+    int[] myNumbers = {6, 5, 4, 3, 2, 1, 0};
+
+- We can also initialize an array inline by using array initializer block { and }.
+Values we defined need to be separated by a comma.
+- This way of initializing an array is also known as an anonymous array.
+- It has 7 elements and index range 0 to 6.
+- In this example, array elements are initialized to 6, 5, 4, 3, 2, 1 and 0.
+
+
+So let's say we create an array of size 5.
+
+    int[] myArray = new int[5];
+
+- Each element at index 0 through 4 would be set to 0.
+
+    myArray[5] = 55; // out of bounds
+
+- Accessing index out of range will cause error in other words,
+ArrayIndexOutOfBoundsException
+- We have 5 elements and index range is 0 to 4.
+
+- When looping through an array, be sure to have the index start at 0,
+since datastructure.arrays are zero indexed. Do not make the mistake of starting from
+index 1. Also be cautious of the termination.

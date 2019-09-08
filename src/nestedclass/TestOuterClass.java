@@ -1,6 +1,6 @@
 package nestedclass;
 
-public class TestOuterClass {
+ public class TestOuterClass {
 
     public static void main(String[] args) {
 

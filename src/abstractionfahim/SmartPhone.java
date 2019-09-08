@@ -2,6 +2,10 @@ package abstractionfahim;
 
 public abstract class SmartPhone implements Phone {
 
+    // an abstract class can have constructor
+    public SmartPhone(){ }
+
+
     public abstract void touchScreen();
 
     public abstract void setOperatingSystem();

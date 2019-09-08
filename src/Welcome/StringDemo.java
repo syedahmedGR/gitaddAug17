@@ -15,6 +15,7 @@ public class StringDemo {
         String str2 = "world";
         String str3 = "First Class";
 
+
         System.out.println(str1 + str2);
         String str4= str1.substring(0,1); // substring(int beginindex, int endindex)
 

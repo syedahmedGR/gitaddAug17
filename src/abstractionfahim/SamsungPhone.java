@@ -9,4 +9,6 @@ public class SamsungPhone extends SmartPhone {
     public void setOperatingSystem(){
         System.out.println("setting the op sys");
     }
+
+
 }
